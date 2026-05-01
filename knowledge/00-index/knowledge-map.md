@@ -38,3 +38,13 @@ raw evidence
 - Rules: `knowledge/05-rules/github-issue-triage`
 - Playbooks: `knowledge/06-playbooks/github-issue-triage`
 - Evals: `knowledge/07-evals/github-issue-triage`
+
+First real knowledge slice:
+
+- [[raw-github-issue-information-sufficiency-source-notes]]
+- [[case-vscode-needs-more-info-loop]]
+- [[case-rust-needs-repro-and-duplicate-caution]]
+- [[claim-github-issue-info-sufficiency-before-classification]]
+- [[dp-github-issue-triage-information-sufficiency]]
+- [[playbook-github-issue-info-first-triage]]
+- [[eval-github-issue-info-request-usefulness]]

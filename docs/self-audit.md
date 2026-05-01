@@ -71,3 +71,34 @@ Mitigation:
 - Use scope levels.
 - Separate general, domain, project, and tool knowledge.
 - Record `does_not_apply_when` and counterexamples.
+
+## Risk: Source evidence is flattened
+
+The first GitHub Issue triage use case showed that official docs, project maintainer guides, handbooks, sampled issues, and measured feedback can all support a claim, but they should not carry the same weight.
+
+Mitigation:
+
+- Record source notes before writing claims.
+- Track `evidence_strength`.
+- Track `transferability`.
+- Distinguish public-source hypotheses from issue-sample or feedback-validated knowledge.
+
+## Risk: Examples and real knowledge may share IDs
+
+The first use case avoided reusing example IDs because duplicated IDs would make retrieval, linking, and graph migration ambiguous.
+
+Mitigation:
+
+- Treat `examples/` as teaching material.
+- Treat `knowledge/` as the live knowledge workspace.
+- Consider an explicit `example-` ID prefix or separate example namespace.
+
+## Risk: Practice guides are not single cases
+
+Public project triage guides describe repeated practices, but they are not the same as individual issue histories.
+
+Mitigation:
+
+- Consider adding `practice_case` as a type.
+- Use sampled issue histories when validating claims.
+- Keep guide-derived knowledge in `hypothesis` or `reviewed` status until tested against real issue behavior.

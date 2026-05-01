@@ -13,6 +13,8 @@ Do not jump directly from raw materials to final rules. First reconstruct human 
 1. **Collect raw materials**
    Preserve the original material or a pointer to it. Do not rewrite evidence as knowledge.
 
+   When raw materials come from multiple public sources, create source notes before creating claims. Source notes should record source type, observed pattern, relevance, limitations, and evidence strength.
+
 2. **Reconstruct activity**
    For each relevant episode, identify:
    - actor
@@ -55,6 +57,7 @@ Do not jump directly from raw materials to final rules. First reconstruct human 
 - Keep machine-readable metadata in frontmatter.
 - Keep human explanation, examples, and counterexamples in the body.
 - Distinguish hypothesis, reviewed, validated, conflicted, and deprecated knowledge.
+- Distinguish source types and evidence strength when public guides, issue samples, papers, and maintainer comments are mixed.
 
 ## Default Statuses
 
@@ -77,6 +80,8 @@ A minimum claim must include:
 - status
 - claim
 - evidence
+- evidence_strength
+- transferability
 - applies_when
 - does_not_apply_when
 - agent_use

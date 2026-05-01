@@ -7,6 +7,8 @@ scope:
   domain: github_issue_triage
 status: hypothesis
 confidence: 0.5
+evidence_strength: weak
+transferability: domain
 schema_version: 0.1
 evidence:
   - case-github-issue-missing-repro-example
@@ -66,6 +68,14 @@ Maintainers need enough information to reproduce, localize, and assign the probl
 ## Evaluation
 
 Check whether applying this claim increases useful user follow-up and reduces maintainer clarification comments.
+
+## Evidence Strength
+
+Current evidence strength is `weak` because this is a teaching example, not a validated claim.
+
+## Transferability
+
+This is domain-level knowledge. Concrete label names and required fields remain project-specific.
 
 ## Open Questions
 

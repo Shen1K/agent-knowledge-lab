@@ -10,6 +10,8 @@
     "scope",
     "status",
     "confidence",
+    "evidence_strength",
+    "transferability",
     "schema_version",
     "evidence",
     "relations"
@@ -40,6 +42,21 @@
       "type": "number",
       "minimum": 0,
       "maximum": 1
+    },
+    "evidence_strength": {
+      "enum": [
+        "weak",
+        "medium",
+        "strong"
+      ]
+    },
+    "transferability": {
+      "enum": [
+        "general",
+        "domain",
+        "project",
+        "tool"
+      ]
     },
     "schema_version": {
       "type": "number"

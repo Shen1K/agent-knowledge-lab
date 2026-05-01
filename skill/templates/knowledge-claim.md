@@ -7,6 +7,8 @@ scope:
   domain: example_domain
 status: hypothesis
 confidence: 0.5
+evidence_strength: weak
+transferability: domain
 schema_version: 0.1
 evidence: []
 relations:
@@ -59,6 +61,14 @@ Why should a human believe or understand this claim?
 ## Evaluation
 
 How could this claim be tested, observed, or falsified?
+
+## Evidence Strength
+
+Why is the current evidence weak, medium, or strong?
+
+## Transferability
+
+Is this claim general, domain-level, project-specific, or tool-specific?
 
 ## Open Questions
 
