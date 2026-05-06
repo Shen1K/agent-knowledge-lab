@@ -12,11 +12,11 @@ tags:
   - domain/example
 ---
 
-# Source notes title
+# 来源笔记标题
 
 ## Purpose
 
-What question or knowledge target are these sources being collected for?
+这些来源是为了回答什么问题，或支撑什么知识目标？
 
 ## Sources
 
@@ -30,15 +30,15 @@ What question or knowledge target are these sources being collected for?
 
 ## Evidence Strength Notes
 
-- Strong evidence:
-- Medium evidence:
-- Weak evidence:
-- Missing evidence:
+- 强证据：
+- 中等证据：
+- 弱证据：
+- 缺失证据：
 
 ## Initial Interpretation
 
-What does this source set suggest?
+这组来源初步说明了什么？
 
 ## Open Questions
 
-- Question 1
+- 问题 1

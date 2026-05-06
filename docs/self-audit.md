@@ -1,104 +1,104 @@
-# Self-Audit
+# 自我审核
 
-This file records known risks in the first design.
+这个文件记录第一版设计中已知的风险。
 
-## Risk: Too many concepts
+## 风险：概念过多
 
-`case`, `claim`, `decision point`, `rule`, `playbook`, and `eval` may be too much for new users.
+`case`、`claim`、`decision point`、`rule`、`playbook` 和 `eval` 对新用户来说可能太多。
 
-Mitigation:
+缓解方式：
 
-- Keep the README simple.
-- Maintain one concrete example.
-- Add learning paths before adding more abstractions.
+- 保持 README 简洁。
+- 维护一个具体示例。
+- 在增加更多抽象之前，先补充学习路径。
 
-## Risk: Markdown may not scale
+## 风险：Markdown 可能无法扩展
 
-Markdown is good for early work but weak for large-scale querying, permissioning, and analytics.
+Markdown 适合早期工作，但在大规模查询、权限和分析方面较弱。
 
-Mitigation:
+缓解方式：
 
-- Use stable IDs and schema versions.
-- Keep machine-readable frontmatter.
-- Prepare for migration without starting with a database.
+- 使用稳定 ID 和 schema 版本。
+- 保留机器可读的 frontmatter。
+- 在不一开始就使用数据库的前提下，为迁移做准备。
 
-## Risk: Knowledge relationships can become noisy
+## 风险：知识关系可能变得嘈杂
 
-If every note links to every other note, the graph becomes decorative instead of useful.
+如果每篇笔记都链接到所有其他笔记，图谱会变成装饰，而不是工具。
 
-Mitigation:
+缓解方式：
 
-- Keep relation types small.
-- Prefer meaningful relations over vague related links.
-- Add linting later for orphaned, excessive, or circular relations.
+- 保持关系类型精简。
+- 优先使用有意义的关系，而不是模糊的 related 链接。
+- 后续增加 lint，检查孤立、过多或循环关系。
 
-## Risk: AI-generated knowledge may look more reliable than it is
+## 风险：AI 生成的知识看起来比实际更可靠
 
-A polished claim can hide weak evidence.
+一条写得很漂亮的 claim 可能掩盖薄弱证据。
 
-Mitigation:
+缓解方式：
 
-- Default AI output to `hypothesis`.
-- Require evidence and evaluation fields.
-- Preserve counterexamples and boundaries.
+- AI 输出默认设为 `hypothesis`。
+- 要求证据和评估字段。
+- 保留反例和边界。
 
-## Risk: Agent optimization may harm human understanding
+## 风险：Agent 优化可能损害人类理解
 
-Highly compressed machine instructions may be hard for humans to learn from.
+高度压缩的机器指令可能让人类很难学习。
 
-Mitigation:
+缓解方式：
 
-- Require human explanation.
-- Include examples and counterexamples.
-- Keep Obsidian-friendly navigation.
+- 要求人类解释。
+- 包含示例和反例。
+- 保持 Obsidian 友好的导航。
 
-## Risk: Feedback attribution is hard
+## 风险：反馈归因困难
 
-When an output fails, it may be unclear whether the problem came from the model, missing data, wrong knowledge, bad retrieval, or tool limitations.
+当输出失败时，可能很难判断问题来自模型、缺失数据、错误知识、检索失败，还是工具限制。
 
-Mitigation:
+缓解方式：
 
-- Require agents to cite knowledge IDs they used.
-- Track output results against cited knowledge.
-- Use change proposals rather than silent overwrites.
+- 要求 Agent 引用使用过的知识 ID。
+- 跟踪输出结果与引用知识之间的关系。
+- 使用变更提案，而不是静默覆盖。
 
-## Risk: Local rules may be over-generalized
+## 风险：局部规则被过度泛化
 
-A rule learned from one repository or team may not apply elsewhere.
+从一个仓库或团队学到的规则，不一定适用于其他地方。
 
-Mitigation:
+缓解方式：
 
-- Use scope levels.
-- Separate general, domain, project, and tool knowledge.
-- Record `does_not_apply_when` and counterexamples.
+- 使用范围层级。
+- 区分通用、领域、项目和工具知识。
+- 记录 `does_not_apply_when` 和反例。
 
-## Risk: Source evidence is flattened
+## 风险：来源证据被打平
 
-The first GitHub Issue triage use case showed that official docs, project maintainer guides, handbooks, sampled issues, and measured feedback can all support a claim, but they should not carry the same weight.
+第一次 GitHub Issue 分诊用例表明，官方文档、项目维护者指南、handbook、抽样 issue 和测量反馈都可以支撑 claim，但它们不应该拥有相同权重。
 
-Mitigation:
+缓解方式：
 
-- Record source notes before writing claims.
-- Track `evidence_strength`.
-- Track `transferability`.
-- Distinguish public-source hypotheses from issue-sample or feedback-validated knowledge.
+- 写 claim 之前先记录 source notes。
+- 跟踪 `evidence_strength`。
+- 跟踪 `transferability`。
+- 区分来自公开来源的假设、来自 issue 样本的假设，以及经过反馈验证的知识。
 
-## Risk: Examples and real knowledge may share IDs
+## 风险：示例和真实知识可能共享 ID
 
-The first use case avoided reusing example IDs because duplicated IDs would make retrieval, linking, and graph migration ambiguous.
+第一次 use case 避免复用示例 ID，因为重复 ID 会让检索、链接和图谱迁移变得含糊。
 
-Mitigation:
+缓解方式：
 
-- Treat `examples/` as teaching material.
-- Treat `knowledge/` as the live knowledge workspace.
-- Consider an explicit `example-` ID prefix or separate example namespace.
+- 把 `examples/` 当成教学材料。
+- 把 `knowledge/` 当成实时知识工作区。
+- 考虑显式的 `example-` ID 前缀，或单独的示例命名空间。
 
-## Risk: Practice guides are not single cases
+## 风险：实践指南不是单个案例
 
-Public project triage guides describe repeated practices, but they are not the same as individual issue histories.
+公开项目分诊指南描述的是重复实践，但它们不同于单个 issue 历史。
 
-Mitigation:
+缓解方式：
 
-- Consider adding `practice_case` as a type.
-- Use sampled issue histories when validating claims.
-- Keep guide-derived knowledge in `hypothesis` or `reviewed` status until tested against real issue behavior.
+- 考虑增加 `practice_case` 类型。
+- 验证 claim 时使用抽样 issue 历史。
+- 在真实 issue 行为验证之前，把由指南推导出的知识保持在 `hypothesis` 或 `reviewed` 状态。

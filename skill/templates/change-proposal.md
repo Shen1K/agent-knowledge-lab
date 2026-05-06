@@ -15,15 +15,15 @@ tags:
   - domain/example
 ---
 
-# Short human-readable title
+# 简短的人类可读标题
 
 ## Proposed Change
 
-What should be added, changed, deprecated, or split?
+应该新增、修改、废弃或拆分什么？
 
 ## Reason
 
-Why is this change needed?
+为什么需要这个变更？
 
 ## Evidence
 
@@ -37,7 +37,7 @@ Why is this change needed?
 
 ## Risks
 
-- Risk 1
+- 风险 1
 
 ## Review Decision
 
@@ -47,4 +47,4 @@ Why is this change needed?
 
 ## Change Log
 
-- YYYY-MM-DD: Proposed.
+- YYYY-MM-DD: 提出变更。

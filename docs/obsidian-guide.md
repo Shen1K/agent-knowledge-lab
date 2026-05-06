@@ -1,22 +1,22 @@
-# Obsidian Guide
+# Obsidian 指南
 
-This project is designed to be opened directly as an Obsidian vault.
+这个项目被设计为可以直接作为 Obsidian vault 打开。
 
-## Recommended Entry Points
+## 推荐入口
 
 - `knowledge/00-index/home.md`
 - `knowledge/00-index/knowledge-map.md`
 - `examples/github-issue-triage/README.md`
 
-## How Links Work
+## 链接如何工作
 
-Use Obsidian-style wiki links in human-facing content:
+在人类阅读的内容中使用 Obsidian 风格的 wiki 链接：
 
 ```text
 [[claim-github-issue-missing-repro-needs-info]]
 ```
 
-Use YAML frontmatter for machine-readable relationships:
+在 YAML frontmatter 中记录机器可读的关系：
 
 ```yaml
 relations:
@@ -24,12 +24,12 @@ relations:
     - claim-github-issue-missing-repro-needs-info
 ```
 
-Both are useful:
+两者都有用：
 
-- Wiki links make the knowledge easier to browse.
-- Frontmatter makes the knowledge easier for agents and tools to parse.
+- Wiki 链接让知识更容易浏览。
+- Frontmatter 让知识更容易被 Agent 和工具解析。
 
-## Suggested Tags
+## 建议标签
 
 ```text
 #type/case
@@ -42,12 +42,12 @@ Both are useful:
 #domain/github-issue-triage
 ```
 
-## Human Reading Path
+## 人类阅读路径
 
-1. Read a playbook.
-2. Open the decision points it depends on.
-3. Read the claims behind those decisions.
-4. Inspect examples and counterexamples.
-5. Review evals and change history.
+1. 先读 playbook。
+2. 打开它依赖的决策点。
+3. 阅读这些决策背后的知识主张。
+4. 查看示例和反例。
+5. 审阅 eval 和变更历史。
 
-This path is intentionally different from an agent retrieval path. Humans need narrative and examples; agents need scoped, cited, structured knowledge.
+这条路径刻意不同于 Agent 的检索路径。人类需要叙事和示例；Agent 需要有范围、有引用、有结构的知识。

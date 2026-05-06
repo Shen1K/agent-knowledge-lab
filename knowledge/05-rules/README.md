@@ -1,5 +1,5 @@
-# Rules
+# 规则
 
-Rules compose one or more knowledge claims into a more operational instruction.
+规则把一个或多个知识主张组合成更可操作的指令。
 
-Rules are not the smallest knowledge unit. They should cite the claims they depend on.
+规则不是最小知识单元。它应该引用自己依赖的 claim。

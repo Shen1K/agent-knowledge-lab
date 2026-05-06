@@ -1,5 +1,5 @@
-# Case Cards
+# 案例卡
 
-Case cards reconstruct human activity from raw materials.
+案例卡用于从原始材料中重建人类活动。
 
-They describe what happened before claiming what should happen.
+它们先描述发生了什么，再讨论应该怎么做。

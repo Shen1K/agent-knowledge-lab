@@ -1,29 +1,29 @@
-# LLM Wiki Comparison
+# 与 LLM Wiki 的比较
 
-LLM Wiki is a useful inspiration for this project.
+LLM Wiki 对这个项目很有启发。
 
-The shared idea is that knowledge should become a persistent, structured, linked artifact instead of being rediscovered from raw chunks on every query.
+共同点是：知识应该成为持久、结构化、互相链接的产物，而不是每次查询时都从原始片段中重新发现。
 
-## Similarities
+## 相似点
 
-- Preserve raw materials.
-- Compile raw materials into durable Markdown knowledge.
-- Use links between pages.
-- Let the knowledge base evolve over time.
+- 保留原始材料。
+- 把原始材料编译成持久的 Markdown 知识。
+- 在页面之间使用链接。
+- 让知识库随时间演进。
 
-## Differences
+## 不同点
 
-Agent Knowledge Lab adds task-oriented structures:
+Agent Knowledge Lab 增加了面向任务的结构：
 
-- case cards
-- knowledge claims
-- decision points
-- playbooks
-- eval rules
-- change proposals
+- 案例卡
+- 知识主张
+- 决策点
+- playbook
+- eval 规则
+- 变更提案
 
-The goal is not only to answer questions. The goal is to help agents and humans do work better.
+目标不只是回答问题。目标是帮助 Agent 和人类更好地做事。
 
-## Design Takeaway
+## 设计启发
 
-LLM Wiki is a strong storage and compilation pattern. Agent Knowledge Lab extends that pattern toward action, evaluation, and feedback.
+LLM Wiki 是一种很强的存储和编译模式。Agent Knowledge Lab 把这个模式进一步扩展到行动、评估和反馈。

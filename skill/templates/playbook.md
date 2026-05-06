@@ -17,26 +17,26 @@ tags:
   - domain/example
 ---
 
-# Short human-readable title
+# 简短的人类可读标题
 
 ## Purpose
 
-What task does this playbook help complete?
+这份 playbook 帮助完成什么任务？
 
 ## When To Use
 
-- Situation 1
-- Situation 2
+- 情况 1
+- 情况 2
 
 ## When Not To Use
 
-- Situation 1
+- 情况 1
 
 ## Steps
 
-1. Step one.
-2. Step two.
-3. Step three.
+1. 第一步。
+2. 第二步。
+3. 第三步。
 
 ## Decision Points
 
@@ -48,12 +48,12 @@ What task does this playbook help complete?
 
 ## Outputs
 
-What should the agent or human produce?
+Agent 或人类应该产出什么？
 
 ## Evaluation
 
-How should the result be evaluated?
+应该如何评估结果？
 
 ## Change Log
 
-- YYYY-MM-DD: Created as hypothesis.
+- YYYY-MM-DD: 作为 hypothesis 创建。

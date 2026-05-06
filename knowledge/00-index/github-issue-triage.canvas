@@ -1,0 +1,176 @@
+{
+  "nodes": [
+    {
+      "id": "topic",
+      "type": "text",
+      "text": "# GitHub Issue 分诊知识\n\n核心问题：Agent 如何先判断 issue 信息是否足够，再决定下一步分诊动作？",
+      "x": 0,
+      "y": 0,
+      "width": 420,
+      "height": 180
+    },
+    {
+      "id": "source",
+      "type": "file",
+      "file": "knowledge/01-raw/github-issue-triage/source-notes-github-issue-information-sufficiency.md",
+      "x": -520,
+      "y": 260,
+      "width": 360,
+      "height": 120
+    },
+    {
+      "id": "case-vscode",
+      "type": "file",
+      "file": "knowledge/02-cases/github-issue-triage/case-vscode-needs-more-info-loop.md",
+      "x": -760,
+      "y": 520,
+      "width": 360,
+      "height": 120
+    },
+    {
+      "id": "case-rust",
+      "type": "file",
+      "file": "knowledge/02-cases/github-issue-triage/case-rust-needs-repro-and-duplicate-caution.md",
+      "x": -320,
+      "y": 520,
+      "width": 360,
+      "height": 120
+    },
+    {
+      "id": "claim",
+      "type": "file",
+      "file": "knowledge/03-claims/github-issue-triage/claim-github-issue-info-sufficiency-before-classification.md",
+      "x": 120,
+      "y": 300,
+      "width": 420,
+      "height": 140
+    },
+    {
+      "id": "decision",
+      "type": "file",
+      "file": "knowledge/04-decision-points/github-issue-triage/dp-github-issue-triage-information-sufficiency.md",
+      "x": 720,
+      "y": 180,
+      "width": 420,
+      "height": 140
+    },
+    {
+      "id": "playbook",
+      "type": "file",
+      "file": "knowledge/06-playbooks/github-issue-triage/playbook-github-issue-info-first-triage.md",
+      "x": 1280,
+      "y": 180,
+      "width": 420,
+      "height": 140
+    },
+    {
+      "id": "eval",
+      "type": "file",
+      "file": "knowledge/07-evals/github-issue-triage/eval-github-issue-info-request-usefulness.md",
+      "x": 720,
+      "y": 520,
+      "width": 420,
+      "height": 140
+    },
+    {
+      "id": "execution",
+      "type": "file",
+      "file": "docs/executions/2026-05-01-github-issue-triage-knowledge.md",
+      "x": 1280,
+      "y": 520,
+      "width": 420,
+      "height": 140
+    },
+    {
+      "id": "feedback",
+      "type": "file",
+      "file": "knowledge/08-changes/change-github-issue-triage-use-case-design-feedback.md",
+      "x": 1840,
+      "y": 520,
+      "width": 420,
+      "height": 140
+    }
+  ],
+  "edges": [
+    {
+      "id": "topic-source",
+      "fromNode": "topic",
+      "fromSide": "bottom",
+      "toNode": "source",
+      "toSide": "top",
+      "label": "收集公开来源"
+    },
+    {
+      "id": "source-vscode",
+      "fromNode": "source",
+      "fromSide": "bottom",
+      "toNode": "case-vscode",
+      "toSide": "top",
+      "label": "重建案例"
+    },
+    {
+      "id": "source-rust",
+      "fromNode": "source",
+      "fromSide": "bottom",
+      "toNode": "case-rust",
+      "toSide": "top",
+      "label": "重建案例"
+    },
+    {
+      "id": "case-vscode-claim",
+      "fromNode": "case-vscode",
+      "fromSide": "right",
+      "toNode": "claim",
+      "toSide": "left",
+      "label": "支持"
+    },
+    {
+      "id": "case-rust-claim",
+      "fromNode": "case-rust",
+      "fromSide": "right",
+      "toNode": "claim",
+      "toSide": "left",
+      "label": "支持"
+    },
+    {
+      "id": "claim-decision",
+      "fromNode": "claim",
+      "fromSide": "right",
+      "toNode": "decision",
+      "toSide": "left",
+      "label": "转成决策点"
+    },
+    {
+      "id": "decision-playbook",
+      "fromNode": "decision",
+      "fromSide": "right",
+      "toNode": "playbook",
+      "toSide": "left",
+      "label": "组织为执行步骤"
+    },
+    {
+      "id": "claim-eval",
+      "fromNode": "claim",
+      "fromSide": "right",
+      "toNode": "eval",
+      "toSide": "left",
+      "label": "定义评估"
+    },
+    {
+      "id": "playbook-execution",
+      "fromNode": "playbook",
+      "fromSide": "bottom",
+      "toNode": "execution",
+      "toSide": "top",
+      "label": "真实 use case 执行"
+    },
+    {
+      "id": "execution-feedback",
+      "fromNode": "execution",
+      "fromSide": "right",
+      "toNode": "feedback",
+      "toSide": "left",
+      "label": "反向改进项目"
+    }
+  ]
+}

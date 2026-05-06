@@ -1,5 +1,5 @@
 # Playbooks
 
-Playbooks organize rules, claims, and decision points into task-level workflows.
+Playbook 把规则、claim 和决策点组织成任务级工作流。
 
-A playbook should be readable by humans and actionable by agents.
+一份 playbook 应该既能被人类阅读，也能被 Agent 执行。

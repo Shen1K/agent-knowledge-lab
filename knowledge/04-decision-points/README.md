@@ -1,5 +1,5 @@
-# Decision Points
+# 决策点
 
-Decision points represent moments where a human or agent must judge what to do next.
+决策点表示人类或 Agent 必须判断下一步该怎么做的时刻。
 
-A decision point usually depends on multiple knowledge claims.
+一个决策点通常依赖多个知识主张。

@@ -26,29 +26,29 @@ tags:
   - domain/example
 ---
 
-# Short human-readable title
+# 简短的人类可读标题
 
 ## Claim
 
-State one clear, scoped, falsifiable claim.
+写出一条清晰、有范围、可证伪的主张。
 
 ## Applies When
 
-- Condition 1
-- Condition 2
+- 条件 1
+- 条件 2
 
 ## Does Not Apply When
 
-- Boundary or exception 1
-- Boundary or exception 2
+- 边界或例外 1
+- 边界或例外 2
 
 ## Agent Use
 
-How should an agent use this claim while doing work?
+Agent 在执行工作时应该如何使用这条 claim？
 
 ## Human Explanation
 
-Why should a human believe or understand this claim?
+人类为什么应该理解或相信这条 claim？
 
 ## Examples
 
@@ -60,20 +60,20 @@ Why should a human believe or understand this claim?
 
 ## Evaluation
 
-How could this claim be tested, observed, or falsified?
+这条 claim 如何被测试、观察或证伪？
 
 ## Evidence Strength
 
-Why is the current evidence weak, medium, or strong?
+为什么当前证据是 weak、medium 或 strong？
 
 ## Transferability
 
-Is this claim general, domain-level, project-specific, or tool-specific?
+这条 claim 是通用知识、领域知识、项目特定知识，还是工具特定知识？
 
 ## Open Questions
 
-- Question 1
+- 问题 1
 
 ## Change Log
 
-- YYYY-MM-DD: Created as hypothesis.
+- YYYY-MM-DD: 作为 hypothesis 创建。

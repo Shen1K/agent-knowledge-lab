@@ -1,7 +1,7 @@
 ---
 id: eval-github-issue-info-request-usefulness
 type: eval_rule
-title: Usefulness of information request in issue triage
+title: Issue 分诊中信息请求的有用性
 domain: github_issue_triage
 status: hypothesis
 schema_version: 0.1
@@ -20,50 +20,50 @@ tags:
   - domain/github-issue-triage
 ---
 
-# Usefulness of information request in issue triage
+# Issue 分诊中信息请求的有用性
 
 ## What It Evaluates
 
-Whether an agent's recommendation to request more information helps move an issue toward actionable triage.
+评估 Agent 建议请求更多信息，是否能帮助 issue 进入 actionable 分诊。
 
 ## Metric Or Signal
 
-- Signal: maintainer accepts the recommendation.
-- Measurement: percentage of agent `needs-info` or `needs-repro` recommendations kept by maintainers.
-- Desired direction: higher is better.
+- Signal: 维护者接受该建议。
+- Measurement: Agent 提出的 `needs-info` 或 `needs-repro` 建议被维护者保留的比例。
+- Desired direction: 越高越好。
 
-- Signal: user provides useful follow-up.
-- Measurement: percentage of information requests followed by missing details that unblock the next triage step.
-- Desired direction: higher is better.
+- Signal: 用户提供有用后续信息。
+- Measurement: 信息请求后，用户补充能解锁下一步分诊的缺失细节的比例。
+- Desired direction: 越高越好。
 
-- Signal: repeated clarification decreases.
-- Measurement: number of additional maintainer clarification comments after the agent's draft.
-- Desired direction: lower is better.
+- Signal: 重复澄清减少。
+- Measurement: Agent 草稿之后，维护者额外澄清评论的数量。
+- Desired direction: 越低越好。
 
 ## Evaluation Method
 
-Sample issues triaged by the agent and compare:
+抽样由 Agent 分诊的 issue，并比较：
 
 1. Agent recommendation.
 2. Maintainer action.
 3. User follow-up.
 4. Final issue path.
-5. Whether the cited knowledge was useful or misleading.
+5. 被引用的知识是否有用或误导。
 
 ## Good Examples
 
-- The agent asks for version, reproduction steps, and actual output; the user provides them; the issue can then be classified and routed.
-- The agent avoids duplicate closure because evidence is weak; a maintainer later confirms the root cause differs.
+- Agent 请求版本、复现步骤和实际输出；用户提供这些信息；issue 随后可以被分类和路由。
+- Agent 因证据较弱而避免 duplicate closure；维护者后来确认根因不同。
 
 ## Bad Examples
 
-- The agent sends a generic template asking for information already present.
-- The agent asks for reproduction on a feature request where reproduction is irrelevant.
-- The agent marks a likely duplicate based only on similar symptoms.
+- Agent 发送泛化模板，要求已经存在的信息。
+- Agent 在 feature request 中请求复现，而复现并不相关。
+- Agent 只基于相似症状就标记可能 duplicate。
 
 ## Limitations
 
-Some users will not respond even to good requests. This eval should not be used alone. It should be combined with maintainer acceptance, rewrite rate, and later issue progression.
+即使请求质量很好，有些用户也不会回复。这个 eval 不应单独使用，应该结合维护者接受度、重写率和后续 issue 进展一起看。
 
 ## Related Knowledge
 

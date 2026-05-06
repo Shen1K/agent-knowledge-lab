@@ -1,14 +1,14 @@
-# Raw Materials
+# 原始材料
 
-Store original evidence or stable pointers here.
+在这里存放原始证据或稳定指针。
 
-Examples:
+示例：
 
-- issue exports
-- chat logs
-- screenshots
-- documents
-- datasets
-- execution traces
+- issue 导出
+- 聊天记录
+- 截图
+- 文档
+- 数据集
+- 执行轨迹
 
-Rule: do not rewrite raw evidence as knowledge. Use case cards and claims for interpretation.
+规则：不要把原始证据直接重写成知识。解释和归纳应该放在案例卡和 claim 里。

@@ -17,20 +17,20 @@ tags:
   - domain/example
 ---
 
-# Short human-readable title
+# 简短的人类可读标题
 
 ## Decision Question
 
-What must the human or agent decide?
+人类或 Agent 必须决定什么？
 
 ## Why This Decision Matters
 
-What happens if this decision is wrong or skipped?
+如果这个决策错误或被跳过，会发生什么？
 
 ## Inputs Needed
 
-- Input 1
-- Input 2
+- 输入 1
+- 输入 2
 
 ## Relevant Claims
 
@@ -38,18 +38,18 @@ What happens if this decision is wrong or skipped?
 
 ## Possible Outcomes
 
-- Outcome A:
-- Outcome B:
-- Outcome C:
+- 结果 A：
+- 结果 B：
+- 结果 C：
 
 ## Agent Behavior
 
-How should an agent reason through this decision point?
+Agent 应该如何推理这个决策点？
 
 ## Human Review Notes
 
-What should a human reviewer pay attention to?
+人类评审者应该关注什么？
 
 ## Evaluation
 
-How can this decision quality be evaluated?
+如何评估这个决策的质量？

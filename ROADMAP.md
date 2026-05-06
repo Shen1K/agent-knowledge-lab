@@ -1,59 +1,65 @@
-# Roadmap
+# 路线图
 
-## Phase 1: Lightweight Skill
+## 阶段 1：轻量 Skill
 
-Goal: make the knowledge generation method explicit, usable, and easy to edit.
+目标：让知识生成方法显性化、可使用、易编辑。
 
-Deliverables:
+交付物：
 
-- Skill instructions for transforming raw materials into knowledge.
-- Markdown templates for cases, claims, decision points, playbooks, evals, and change proposals.
-- Obsidian-compatible folder structure and links.
-- GitHub Issue triage example.
-- Basic JSON schemas for future validators.
+- 把原始材料转化为知识的 skill 指令。
+- 案例、知识主张、决策点、playbook、eval 和变更提案的 Markdown 模板。
+- Obsidian 兼容的文件夹结构和链接。
+- GitHub Issue 分诊示例。
+- 面向未来验证器的基础 JSON schema。
 
-Success criteria:
+成功标准：
 
-- A human can read the project and understand the method in 10 minutes.
-- A model can follow the skill to create a case card and a knowledge claim.
-- Every generated claim has scope, evidence, boundary, status, usage, and evaluation.
+- 人类能在 10 分钟内读懂项目和方法。
+- 模型能按照 skill 创建案例卡和知识主张。
+- 每个生成的知识主张都有范围、证据、边界、状态、使用方式和评估方法。
 
-## Phase 2: Knowledge Agent
+## 阶段 2：知识 Agent
 
-Goal: automate repeated knowledge work while keeping human review in control.
+目标：在保留人类评审权的前提下，自动化重复的知识工作。
 
-Potential capabilities:
+潜在能力：
 
-- Ingest raw materials from files, GitHub, websites, or chat exports.
-- Generate case cards from raw evidence.
-- Propose knowledge claims and decision points.
-- Detect conflicts, duplicates, missing evidence, and outdated knowledge.
-- Produce change proposals instead of directly rewriting validated knowledge.
-- Track which knowledge was used by an agent and how the result performed.
+- 从文件、GitHub、网站或聊天导出中摄入原始材料。
+- 从原始证据生成案例卡。
+- 提出知识主张和决策点。
+- 检测冲突、重复、证据缺失和过期知识。
+- 生成变更提案，而不是直接重写已验证知识。
+- 跟踪 Agent 使用了哪些知识，以及结果表现如何。
 
-Guardrails:
+护栏：
 
-- AI-generated knowledge defaults to `status: hypothesis`.
-- Validated knowledge requires human approval or clear evaluation evidence.
-- Every update must preserve provenance and change history.
+- AI 生成的知识默认 `status: hypothesis`。
+- 已验证知识需要人类批准，或有清晰的评估证据。
+- 每次更新都必须保留来源和变更历史。
 
-## Phase 3: Knowledge Service
+## 阶段 3：知识服务
 
-Goal: turn the system into collaborative infrastructure.
+目标：把系统变成协作基础设施。
 
-Potential capabilities:
+潜在能力：
 
-- Web UI for browsing, reviewing, and editing knowledge.
-- Knowledge graph and relation explorer.
-- Eval dashboard.
-- Review workflow and permissions.
-- Multi-domain and multi-agent knowledge spaces.
-- API for agents to retrieve, cite, and update knowledge proposals.
+- 用于浏览、评审和编辑知识的 Web UI。
+- 知识图谱和关系浏览器。
+- Eval 看板。
+- 评审流程和权限。
+- 多领域、多 Agent 的知识空间。
+- 供 Agent 检索、引用和提交知识更新提案的 API。
 
-## Open Questions
+## 开放问题
 
-- What is the right minimum schema for a knowledge claim?
-- How should feedback be attributed to specific knowledge units?
-- How should conflicts be resolved across general, domain, project, and tool layers?
-- When should a hypothesis be upgraded to validated knowledge?
-- What should remain Markdown, and what should move into a database or graph?
+- 知识主张的最小 schema 应该是什么？
+- 如何把反馈归因到具体知识单元？
+- 如何处理通用、领域、项目和工具层知识之间的冲突？
+- 什么时候可以把一个假设升级为已验证知识？
+- 哪些内容应该继续保留为 Markdown，哪些应该迁移到数据库或图谱？
+
+## 相邻项目参考
+
+GitHub 上已经有 LLM Wiki、Agent Memory、Agent Eval 和 Obsidian MCP 等相邻方向。它们为项目定位和后续工具链提供参考，但 `agent-knowledge-lab` 的核心差异仍然是把真实执行经验转化为 `claim -> decision point -> playbook -> eval -> change proposal`。
+
+详细参考见 [docs/related-projects-and-future-directions.md](docs/related-projects-and-future-directions.md)。

@@ -1,5 +1,5 @@
-# Knowledge Claims
+# 知识主张
 
-Knowledge claims are the smallest usable and falsifiable knowledge units.
+知识主张是最小的、可使用且可证伪的知识单元。
 
-Every claim should have scope, evidence, boundary, usage, evaluation, status, and relations.
+每条 claim 都应该包含范围、证据、边界、使用方式、评估、状态和关系。

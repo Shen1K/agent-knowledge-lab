@@ -1,32 +1,33 @@
 ---
 id: home
 type: index
-title: Knowledge Home
+title: 知识首页
 schema_version: 0.1
 ---
 
-# Knowledge Home
+# 知识首页
 
-Start here.
+从这里开始。
 
-This workspace stores knowledge that can be used by both humans and AI agents.
+这个工作区存放人类和 AI Agent 都能使用的知识。
 
-## Read First
+## 先读
 
 - [[knowledge-map]]
+- [[github-issue-triage]]
 - [[open-questions]]
 
-## Main Folders
+## 主要文件夹
 
-- `01-raw`: original materials and evidence pointers.
-- `02-cases`: reconstructed human activity cases.
-- `03-claims`: smallest usable knowledge claims.
-- `04-decision-points`: judgment moments in tasks.
-- `05-rules`: composed rules built from claims.
-- `06-playbooks`: task-level operating guides.
-- `07-evals`: evaluation knowledge.
-- `08-changes`: knowledge change records.
+- `01-raw`：原始材料和证据指针。
+- `02-cases`：重建后的人类活动案例。
+- `03-claims`：最小的可用知识主张。
+- `04-decision-points`：任务中的判断时刻。
+- `05-rules`：由 claim 组合出的规则。
+- `06-playbooks`：任务级操作指南。
+- `07-evals`：评估知识。
+- `08-changes`：知识变更记录。
 
-## Current Validation Domain
+## 当前验证领域
 
-- GitHub Issue triage.
+- [[github-issue-triage|GitHub Issue 分诊]]。

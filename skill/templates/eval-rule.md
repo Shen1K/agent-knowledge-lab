@@ -17,11 +17,11 @@ tags:
   - domain/example
 ---
 
-# Short human-readable title
+# 简短的人类可读标题
 
 ## What It Evaluates
 
-What output, decision, claim, or playbook does this evaluate?
+它评估什么输出、决策、claim 或 playbook？
 
 ## Metric Or Signal
 
@@ -31,19 +31,19 @@ What output, decision, claim, or playbook does this evaluate?
 
 ## Evaluation Method
 
-How should this be checked?
+应该如何检查？
 
 ## Good Examples
 
-- Example 1
+- 示例 1
 
 ## Bad Examples
 
-- Example 1
+- 示例 1
 
 ## Limitations
 
-What can this evaluation miss or distort?
+这个评估可能遗漏或扭曲什么？
 
 ## Related Knowledge
 

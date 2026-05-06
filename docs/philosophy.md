@@ -1,27 +1,27 @@
-# Philosophy
+# 哲学
 
-Agent Knowledge Lab starts from one belief:
+Agent Knowledge Lab 从一个信念出发：
 
-> Useful agent knowledge grows from understanding how humans act in the world.
+> 有用的 Agent 知识，来自对人类如何在世界中行动的理解。
 
-The current world is built around human goals, human institutions, human tools, and human evaluation. A model can execute many actions quickly, but speed does not replace the need to understand human judgment.
+当前世界围绕人类目标、人类制度、人类工具和人类评价建立。模型可以很快执行许多动作，但速度不能替代理解人类判断。
 
-## From materials to activity
+## 从材料到活动
 
-Raw documents, screenshots, data tables, and issue threads do not directly reveal knowledge. They first need to be interpreted as activity:
+原始文档、截图、数据表和 issue 讨论串不会直接显露知识。它们首先需要被解释为活动：
 
 ```text
-human activity = goal + context + object + judgment + action + tool + result + evaluation
+人类活动 = 目标 + 上下文 + 对象 + 判断 + 行动 + 工具 + 结果 + 评价
 ```
 
-Only after this reconstruction can we responsibly propose patterns and hypotheses.
+只有完成这种重建之后，我们才能负责任地提出模式和假设。
 
-## From hypothesis to knowledge
+## 从假设到知识
 
-AI-generated knowledge starts as a hypothesis. It becomes stronger through evidence, review, repeated use, and feedback.
+AI 生成的知识一开始是假设。它通过证据、评审、反复使用和反馈逐渐变强。
 
-The system should preserve this development path instead of flattening everything into polished documentation.
+系统应该保留这条发展路径，而不是把所有东西都压平成漂亮的文档。
 
-## Shared progress
+## 共同进步
 
-The goal is not only to make agents better. The same knowledge should help people learn the domain faster, understand why the agent acts, and improve their own judgment.
+目标不只是让 Agent 变得更好。同一份知识也应该帮助人更快学习领域、理解 Agent 为什么行动，并提升自己的判断力。

@@ -1,50 +1,50 @@
-# Principles
+# 原则
 
-## 1. Reconstruct activity before extracting knowledge
+## 1. 先重建活动，再提取知识
 
-Raw materials do not contain ready-made SOPs. First ask:
+原始材料里没有现成的 SOP。先问：
 
-- Who is acting?
-- What goal are they pursuing?
-- What object are they acting on?
-- What context and constraints shape the action?
-- What judgment is being made?
-- What tool or action is used?
-- What result happened?
-- Who evaluates whether it was good?
+- 谁在行动？
+- 他想达成什么目标？
+- 他正在处理什么对象？
+- 什么上下文和约束影响了行动？
+- 这里发生了什么判断？
+- 使用了什么工具或动作？
+- 产生了什么结果？
+- 谁来评价这个结果是否好？
 
-## 2. Treat AI output as hypothesis
+## 2. 把 AI 输出视为假设
 
-AI can summarize, compare, and propose. It should not silently promote its own output into truth.
+AI 可以总结、比较和提出方案，但不能默默把自己的输出升级成事实。
 
-Default status for model-generated knowledge:
+模型生成知识的默认状态应该是：
 
 ```text
 hypothesis
 ```
 
-## 3. Store knowledge as usable objects
+## 3. 把知识存成可使用的对象
 
-A useful knowledge object includes:
+一个有用的知识对象应该包括：
 
-- scope
-- evidence
-- boundary
-- agent usage
-- human explanation
-- evaluation method
-- status
-- relationships
-- change history
+- 范围
+- 证据
+- 边界
+- Agent 使用方式
+- 人类解释
+- 评估方法
+- 状态
+- 关系
+- 变更历史
 
-## 4. Humans and agents should both improve
+## 4. 人类和 Agent 都应该进步
 
-The knowledge system should help agents act better and help humans understand the work better. A file that only a machine can use is not enough. A document that only a human can read is also not enough.
+知识系统应该帮助 Agent 更好地行动，也应该帮助人类更好地理解工作。只有机器能用的文件不够，只有人类能读的文章也不够。
 
-## 5. Keep the first version light
+## 5. 第一版保持轻量
 
-Use Markdown, YAML frontmatter, stable IDs, and Obsidian-compatible links. Avoid heavy infrastructure before the method has been tested.
+使用 Markdown、YAML frontmatter、稳定 ID 和 Obsidian 兼容链接。在方法被验证之前，不要过早引入重型基础设施。
 
-## 6. Design for migration
+## 6. 为迁移而设计
 
-Every knowledge object should have a stable ID, type, schema version, and explicit relations so it can later move into a database, graph, or service without losing meaning.
+每个知识对象都应该有稳定 ID、类型、schema 版本和明确关系，这样以后迁移到数据库、图谱或服务时不会丢失含义。

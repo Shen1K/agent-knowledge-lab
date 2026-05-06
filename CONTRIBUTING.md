@@ -1,28 +1,28 @@
-# Contributing
+# 贡献指南
 
-This project is early and method-first. Contributions are welcome when they make the knowledge system clearer, more testable, or easier to use.
+这个项目还在早期阶段，优先关注方法本身。欢迎那些能让知识系统更清晰、更可测试、更易使用的贡献。
 
-Good contributions include:
+好的贡献包括：
 
-- Better templates.
-- Worked examples from real domains.
-- Critiques of the schema.
-- New evaluation patterns.
-- Obsidian usage improvements.
-- Scripts or validators that preserve the Markdown-first workflow.
+- 更好的模板。
+- 来自真实领域的完整示例。
+- 对 schema 的批评和改进建议。
+- 新的评估模式。
+- Obsidian 使用体验改进。
+- 能保留 Markdown-first 工作流的脚本或验证器。
 
-When proposing new knowledge, prefer this path:
+提出新知识时，优先采用这条路径：
 
 ```text
-raw evidence -> case card -> knowledge claim -> decision point or rule -> eval
+原始证据 -> 案例卡 -> 知识主张 -> 决策点或规则 -> eval
 ```
 
-Do not mark AI-generated knowledge as validated unless there is evidence or review.
+除非有证据或评审，否则不要把 AI 生成的知识标记为已验证。
 
-## Style
+## 风格
 
-- Use stable IDs in filenames.
-- Keep frontmatter machine-readable.
-- Keep body text useful to humans.
-- Include examples and counterexamples when possible.
-- Record boundaries and change reasons.
+- 在文件名中使用稳定 ID。
+- 保持 frontmatter 机器可读。
+- 保持正文对人类有用。
+- 尽可能包含示例和反例。
+- 记录边界和变更原因。

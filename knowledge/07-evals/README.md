@@ -1,5 +1,5 @@
 # Evals
 
-Evals define how knowledge and outputs are judged.
+Eval 定义如何判断知识和输出。
 
-Evaluation knowledge is also knowledge. It should be versioned, scoped, and reviewed.
+评估知识本身也是知识。它也应该有版本、范围和评审。

@@ -1,38 +1,38 @@
-# Migration Path
+# 迁移路径
 
-The first version is Markdown-first. That is intentional.
+第一版以 Markdown 为中心。这是刻意选择。
 
-Markdown is easy to read, easy to edit, easy to diff, and easy for models to generate. It is not the final storage layer for every future use case.
+Markdown 易读、易编辑、易 diff，也容易由模型生成。但它不一定是未来所有场景的最终存储层。
 
-## Possible Evolution
+## 可能的演进
 
 ```text
-Markdown files
-  -> Markdown with validators
-  -> indexed knowledge store
-  -> graph database
-  -> collaborative service
+Markdown 文件
+  -> 带验证器的 Markdown
+  -> 索引化知识存储
+  -> 图数据库
+  -> 协作服务
 ```
 
-## What Must Stay Stable
+## 必须保持稳定的东西
 
-- IDs
-- types
-- schema versions
-- evidence references
-- relationship semantics
-- status lifecycle
-- change history
+- ID
+- 类型
+- schema 版本
+- 证据引用
+- 关系语义
+- 状态生命周期
+- 变更历史
 
-## What Can Change
+## 可以变化的东西
 
-- storage backend
-- retrieval strategy
+- 存储后端
+- 检索策略
 - UI
-- review workflow
-- evaluation automation
-- graph visualization
+- 评审流程
+- 评估自动化
+- 图谱可视化
 
-## Design Rule
+## 设计规则
 
-Do not optimize the storage backend before the knowledge method is proven.
+在知识方法被证明有效之前，不要过早优化存储后端。

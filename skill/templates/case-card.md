@@ -19,11 +19,11 @@ tags:
   - domain/example
 ---
 
-# Short human-readable title
+# 简短的人类可读标题
 
 ## Summary
 
-What happened in this case?
+这个案例中发生了什么？
 
 ## Activity Reconstruction
 
@@ -40,14 +40,14 @@ What happened in this case?
 
 ## Important Details
 
-- Detail 1
-- Detail 2
+- 细节 1
+- 细节 2
 
 ## What This Case Might Teach
 
-- Possible pattern:
-- Possible exception:
-- Open question:
+- 可能的模式：
+- 可能的例外：
+- 开放问题：
 
 ## Evidence
 
@@ -55,4 +55,4 @@ What happened in this case?
 
 ## Notes
 
-Anything uncertain or worth reviewing.
+任何不确定或值得复核的内容。
